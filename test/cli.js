@@ -5,9 +5,11 @@ const nixt = require('nixt');
 
 const { it, describe } = (exports.lab = Lab.script());
 
+const baseNixt = nixt().exec('npm link');
+
 describe('gwo', () => {
   it('is available in shell', () => {
-    nixt().code(0).run('gwo').end();
+    baseNixt.clone().code(0).run('gwo').end();
   });
 
   it('throws if not authenticated');
