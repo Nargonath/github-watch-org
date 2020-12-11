@@ -1,0 +1,33 @@
+{
+  "name": "github-watch-org",
+  "version": "0.0.0-development",
+  "description": "CLI tool to watch repos of an org for you",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "lab -l"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nargonath/github-watch-org.git"
+  },
+  "keywords": [
+    "nodejs",
+    "cli",
+    "github",
+    "watch",
+    "org",
+    "watch-repos",
+    "watching",
+    "watch-org"
+  ],
+  "author": "Nargonath <jonas.pauthier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nargonath/github-watch-org/issues"
+  },
+  "homepage": "https://github.com/Nargonath/github-watch-org#readme",
+  "devDependencies": {
+    "@hapi/lab": "24.x.x",
+    "nixt": "0.5.x"
+  }
+}
