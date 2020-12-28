@@ -13,4 +13,5 @@ const result = spawnSync('node', [commandPath, ...restArgs], {
   stdio: 'inherit',
 });
 
-process.exit(result.status);
+// @see: https://nodejs.org/api/process.html#process_process_exit_code
+process.exitCode = result.status;
