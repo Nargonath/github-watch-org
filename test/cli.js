@@ -14,6 +14,10 @@ describe('gwo', () => {
     await endNixtCalls(baseNixt.clone().code(0).run('gwo --help'));
   });
 
+  it('errors out for unknown command', async () => {
+    await endNixtCalls(baseNixt.clone().code(2).run('gwo unknownCommand'));
+  });
+
   it('throws if not authenticated');
 
   it('accepts GITHUB_TOKEN as authentication');
