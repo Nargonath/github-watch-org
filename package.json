@@ -7,7 +7,7 @@
     "gwo": "bin/gwo.js"
   },
   "scripts": {
-    "test": "lab -l"
+    "test": "lab -l -m 5000"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/Nargonath/github-watch-org#readme",
   "devDependencies": {
+    "@hapi/code": "8.x.x",
     "@hapi/lab": "24.x.x",
     "nixt": "0.5.x"
   },
