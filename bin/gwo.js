@@ -4,6 +4,9 @@
 
 const { spawnSync } = require('child_process');
 
+// require it here to handle --help before checking prerequisites
+require('../utils/cliHandler');
+
 const [, , ...restArgs] = process.argv;
 
 const commandPath = require.resolve('../lib');

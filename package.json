@@ -32,5 +32,8 @@
   "devDependencies": {
     "@hapi/lab": "24.x.x",
     "nixt": "0.5.x"
+  },
+  "dependencies": {
+    "meow": "9.x.x"
   }
 }

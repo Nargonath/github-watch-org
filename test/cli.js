@@ -3,13 +3,15 @@
 const Lab = require('@hapi/lab');
 const nixt = require('nixt');
 
+const { endNixtCalls } = require('./utils');
+
 const { it, describe } = (exports.lab = Lab.script());
 
 const baseNixt = nixt().exec('npm link');
 
 describe('gwo', () => {
-  it('is available in shell', () => {
-    baseNixt.clone().code(0).run('gwo').end();
+  it('is an executable', async () => {
+    await endNixtCalls(baseNixt.clone().code(0).run('gwo --help'));
   });
 
   it('throws if not authenticated');
